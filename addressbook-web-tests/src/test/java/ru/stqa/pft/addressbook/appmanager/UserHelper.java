@@ -21,12 +21,11 @@ public class UserHelper extends HelperBase {
 
   public void fillUserForm(UserData userData) {
     type(By.name("firstname"), userData.getFirstname());
-    type(By.name("middlename"), userData.getMiddlename());
-    type(By.name("middlename"), userData.getMiddlename());
+//    type(By.name("middlename"), userData.getMiddlename());
     type(By.name("lastname"), userData.getLastname());
-    type(By.name("nickname"), userData.getNickname());
+/*    type(By.name("nickname"), userData.getNickname());
     type(By.name("title"), userData.getTitle());
-    type(By.name("company"), userData.getCompanyname());
+    type(By.name("company"), userData.getCompanyname());*/
     type(By.name("address"), userData.getCompanyaddress());
     type(By.name("home"), userData.getHomephone());
     type(By.name("mobile"), userData.getMobilephone());
@@ -35,7 +34,7 @@ public class UserHelper extends HelperBase {
     type(By.name("email"), userData.getEmail1());
     type(By.name("email2"), userData.getEmail2());
     type(By.name("email3"), userData.getEmail3());
-    type(By.name("homepage"), userData.getHomesite());
+/*//    type(By.name("homepage"), userData.getHomesite());
 
     if (!wd.findElement(By.xpath("//div[@id='content']/form/select[1]//option[1]")).isSelected()) {
       click(By.xpath("//div[@id='content']/form/select[1]//option[1]"));
@@ -134,13 +133,13 @@ public class UserHelper extends HelperBase {
     if (!wd.findElement(By.xpath("//div[@id='content']/form/select[4]//option[4]")).isSelected()) {
       click(By.xpath("//div[@id='content']/form/select[4]//option[4]"));
     }
-    type(By.name("ayear"), userData.getSecondeyar());
-//    if (!wd.findElement(By.xpath("//div[@id='content']/form/select[5]//option[9]")).isSelected()) {
-//     click(By.xpath("//div[@id='content']/form/select[5]//option[9]"));
- //   }
-    type(By.name("address2"), userData.getUseraddress());
+    type(By.name("ayear"), userData.getSecondeyar());*/
+/*    if (!wd.findElement(By.xpath("//div[@id='content']/form/select[5]//option[9]")).isSelected()) {
+     click(By.xpath("//div[@id='content']/form/select[5]//option[9]"));
+    }
+    type(By.name("address2"), userData.getUseraddress());*/
     type(By.name("phone2"), userData.getUserphone());
-    type(By.name("notes"), userData.getUsernotes());
+//    type(By.name("notes"), userData.getUsernotes());
   }
 
   public void initUserCreation() {
